@@ -1,10 +1,10 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
+// eslint-disable-next-line react/prop-types
+function Main({ children }) {
+  return (
+    <>
+      <main className="main">{children}</main>;
+    </>
+  );
+}
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+export default Main;
