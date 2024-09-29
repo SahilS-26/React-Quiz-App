@@ -12,3 +12,21 @@ Currently, two official plugins are available:
 ```
 git clone https://github.com/SahilS-26/React-Quiz-App.git
 ```
+
+## Install dependencies
+
+```
+npm install
+```
+
+## Run json-server for fake API data
+
+```
+npm run server
+```
+
+## Run development server
+
+```
+npm run dev
+```
