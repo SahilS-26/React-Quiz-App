@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-function FinishScreen({ points, numPossiblePoints, highscore }) {
+function FinishScreen({ points, numPossiblePoints, highscore, dispatch }) {
   const percent = (points / numPossiblePoints) * 100;
 
   let emoji;
@@ -17,6 +17,13 @@ function FinishScreen({ points, numPossiblePoints, highscore }) {
       </p>
 
       <p className="highscore">(Highscore: {highscore} points)</p>
+
+      <button
+        className="btn btn-ui"
+        onClick={() => dispatch({ type: "restart" })}
+      >
+        Restart Quiz
+      </button>
     </>
   );
 }
